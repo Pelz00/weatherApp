@@ -70,4 +70,19 @@ body{
     align-items: center;
     gap:20px
   }
+
+@media screen and (max-width:550px) {
+    .showinfo{
+        background-color: red;
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .temp{
+      gap: 0;
+    }
+    .weathercafe{
+      width: 100%;
+      padding: 0;
+    }
+  }
   
