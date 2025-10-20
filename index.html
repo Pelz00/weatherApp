@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Weather App</h1>
+     <input class="inpu" oninput="callCity()" type="text" placeholder="Enter city name...(e.g ilorin)" id="cityinput" 
+     data-aos="zoom-out" data-aos-delay="500" >
+     <div class="weathercafe">
+    <div class="lolo "id="showWeather" data-aos="fade-down" data-aos-delay="400"></div>
+    <div class="big">
+    <div class="lolo" id="showWeatherTwo" data-aos="flip-up" data-aos-delay="400"></div>
+     <div class="lolo" id="showWeatherThree" data-aos="flip-left" data-aos-delay="400"></div>
+    </div>
+     <div class="lolo" id="showWeatherFour" data-aos="zoom-in" data-aos-delay="400"></div>
+     </div>
+
+
+
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
