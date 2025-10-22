@@ -19,16 +19,16 @@ async function callCity() {
             const data = await link.json();
 showWeather.innerHTML = 
       `<div class="showinfo">
-            <div style="display: flex;justify-content: space-between;">
-            <h2>${data.name}, ${data.sys.country}</h2>
+            <div style="display: flex;justify-content: space-between;align-items: center;">
+            <h2>${data.name},${data.sys.country}</h2>
             <div class='temp'>
-            <div><img src="sun.svg" alt=""></div>
-            <p style='font-size:50px;font-weight:200'>${data.main.temp}°C</p>
+            <div><img class='sunny' src="sun.svg" alt=""></div>
+            <p class='tempo'>${data.main.temp}°C</p>
             </div>
             </div>
             <div style="display: flex;justify-content: space-between;align-items: center;">
             <div>
-            <p style='font-size:30px;font-weight:300;margin-top:10px'> ${data.wind.speed} m/s</p>
+            <p class='wind'>ws:${data.wind.speed} m/s</p>
             <p style='font-size:20px;font-weight:700'>${data.weather[0].description}</p>
             </div>
             <div>
@@ -67,13 +67,13 @@ showWeather.innerHTML =
             <div style="display: flex;justify-content: space-between;">
             <h2>${data.name}, ${data.sys.country}</h2>
             <div class='temp'>
-            <div><img src="sun.svg" alt=""></div>
-            <p style='font-size:50px;font-weight:200'>${data.main.temp}°C</p>
+            <div><img class='sunny' src="sun.svg" alt=""></div>
+            <p class='tempo'>${data.main.temp}°C</p>
             </div>
             </div>
             <div style="display: flex;justify-content: space-between;align-items: center;">
             <div>
-             <p style='font-size:30px;font-weight:300;margin-top:10px'> ${data.wind.speed} m/s</p>
+             <p class='wind'>ws:${data.wind.speed} m/s</p>
             <p style='font-size:20px;font-weight:700'>${data.weather[0].description}</p>
             </div>
             <div>
@@ -110,15 +110,15 @@ showWeather.innerHTML =
            showWeatherTwo.innerHTML = 
       `<div class="showinfo">
             <div style="display: flex;justify-content: space-between;">
-            <h2>${data.name}, ${data.sys.country}</h2>
+            <h2>${data.name},${data.sys.country}</h2>
             <div class='temp'>
-            <div><img src="sun.svg" alt=""></div>
-            <p style='font-size:50px;font-weight:200'>${data.main.temp}°C</p>
+            <div><img class='sunny' src="sun.svg" alt=""></div>
+            <p class='tempo'>${data.main.temp}°C</p>
             </div>
             </div>
             <div style="display: flex;justify-content: space-between;align-items: center;">
             <div>
-             <p style='font-size:30px;font-weight:300;margin-top:10px'> ${data.wind.speed} m/s</p>
+             <p class='wind'>ws:${data.wind.speed} m/s</p>
             <p style='font-size:20px;font-weight:700'>${data.weather[0].description}</p>
             </div>
             <div>
@@ -157,13 +157,13 @@ showWeather.innerHTML =
             <div style="display: flex;justify-content: space-between;">
             <h2>${data.name}, ${data.sys.country}</h2>
             <div class='temp'>
-            <div><img src="sun.svg" alt=""></div>
-            <p style='font-size:50px;font-weight:200'>${data.main.temp}°C</p>
+            <div><img class='sunny' src="sun.svg" alt=""></div>
+            <p class='tempo'>${data.main.temp}°C</p>
             </div>
             </div>
             <div style="display: flex;justify-content: space-between;align-items: center;">
             <div>
-             <p style='font-size:30px;font-weight:300;margin-top:10px'> ${data.wind.speed} m/s</p>
+             <p class='wind'>ws:${data.wind.speed} m/s</p>
             <p style='font-size:20px;font-weight:700'>${data.weather[0].description}</p>
             </div>
             <div>
@@ -202,13 +202,13 @@ showWeather.innerHTML =
             <div style="display: flex;justify-content: space-between;">
             <h2>${data.name}, ${data.sys.country}</h2>
             <div class='temp'>
-            <div><img src="sun.svg" alt=""></div>
-            <p style='font-size:50px;font-weight:200'>${data.main.temp}°C</p>
+            <div class='sunny'><img class='sunny' src="sun.svg" alt=""></div>
+            <p class='tempo'>${data.main.temp}°C</p>
             </div>
             </div>
             <div style="display: flex;justify-content: space-between;align-items: center;">
             <div>
-             <p style='font-size:30px;font-weight:300;margin-top:10px'> ${data.wind.speed} m/s</p>
+             <p class='wind'>ws:${data.wind.speed} m/s</p>
             <p style='font-size:20px;font-weight:700'>${data.weather[0].description}</p>
             </div>
             <div>
